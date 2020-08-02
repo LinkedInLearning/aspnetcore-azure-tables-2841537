@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmployeeManagement.Data.Common;
+using System;
 
 namespace EmployeeManagement
 {
@@ -6,7 +7,9 @@ namespace EmployeeManagement
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Common.CreateTableAsync("test").GetAwaiter().GetResult();
+
+            Console.ReadKey();
         }
     }
 }

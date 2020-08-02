@@ -2,3 +2,25 @@ C:\Users\LinkedIn Learning\source\repos\EmployeeManagement\EmployeeManagement\bi
 C:\Users\LinkedIn Learning\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.csprojAssemblyReference.cache
 C:\Users\LinkedIn Learning\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.AssemblyInfoInputs.cache
 C:\Users\LinkedIn Learning\source\repos\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.AssemblyInfo.cs
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.csprojAssemblyReference.cache
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.AssemblyInfoInputs.cache
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.AssemblyInfo.cs
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.csproj.CoreCompileInputs.cache
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\EmployeeManagement.exe
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\EmployeeManagement.deps.json
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\EmployeeManagement.runtimeconfig.json
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\EmployeeManagement.runtimeconfig.dev.json
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\EmployeeManagement.dll
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\EmployeeManagement.pdb
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\Microsoft.Azure.Cosmos.Table.dll
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\Microsoft.Azure.DocumentDB.Core.dll
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\Microsoft.OData.Core.dll
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\Microsoft.OData.Edm.dll
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\Microsoft.Spatial.dll
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\Cosmos.CRTCompat.dll
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\Microsoft.Azure.Documents.ServiceInterop.dll
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.csproj.CopyComplete
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.dll
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.pdb
+C:\Users\LinkedIn Learning\Pictures\Azure Tables\Exercise Files\aspnetcore-azure-tables-2841537\EmployeeManagement\obj\Debug\netcoreapp3.1\EmployeeManagement.genruntimeconfig.cache
