@@ -26,12 +26,12 @@ namespace EmployeeManagement.Data.Common
                 {
                     Console.WriteLine($"Table {tableName} already exists");
                 }
+                return cloudTable;
             } else
             {
                 Console.WriteLine("Connectionstring IS NOT valid");
+                return null;
             }
-
-            return null;
         }
     }
 }
