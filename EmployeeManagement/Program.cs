@@ -7,7 +7,7 @@ namespace EmployeeManagement
     {
         static void Main(string[] args)
         {
-            Common.CreateTableAsync("test").GetAwaiter().GetResult();
+            Common.CreateTableAsync("Employee").GetAwaiter().GetResult();
 
             Console.ReadKey();
         }
