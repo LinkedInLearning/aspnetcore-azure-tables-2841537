@@ -20,7 +20,8 @@ namespace EmployeeManagement.Data.Operations
                 //await AddDataOperation(cloudTable);
                 //await UpdateDataOperation(cloudTable);
                 //RetrieveAllDataOperation(cloudTable);
-                RetrieveSingleDataOperation(cloudTable, "Consulting", "ervis-trupja-rk-new");
+                EmployeeEntity entity = RetrieveSingleDataOperation(cloudTable, "Consulting", "ervis-trupja-rk-new");
+                DeleteDataOperation(cloudTable, entity);
             }
             catch (Exception)
             {
@@ -89,7 +90,7 @@ namespace EmployeeManagement.Data.Operations
             }
         }
 
-        public void RetrieveSingleDataOperation(CloudTable cloudTable, string partitionKey, string rowKey)
+        public EmployeeEntity RetrieveSingleDataOperation(CloudTable cloudTable, string partitionKey, string rowKey)
         {
             TableOperation retrieveSingleOperation = TableOperation.Retrieve<EmployeeEntity>(partitionKey, rowKey);
 
@@ -100,6 +101,21 @@ namespace EmployeeManagement.Data.Operations
             if(employee != null)
             {
                 Console.WriteLine($"Employee Data => {employee.RowKey},  {employee.PartitionKey},  {employee.FullName} ");
+
+                return employee;
+            }
+            return null;
+        }
+
+        public void DeleteDataOperation(CloudTable cloudTable, EmployeeEntity entity)
+        {
+            TableOperation deleteOperation = TableOperation.Delete(entity);
+
+            TableResult result = cloudTable.Execute(deleteOperation);
+
+            if (result.RequestCharge.HasValue)
+            {
+                Console.WriteLine($"Request Charge of Delete Operation : {result.RequestCharge}");
             }
         }
     }
