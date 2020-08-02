@@ -18,7 +18,9 @@ namespace EmployeeManagement.Data.Operations
             try
             {
                 //await AddDataOperation(cloudTable);
-                await UpdateDataOperation(cloudTable);
+                //await UpdateDataOperation(cloudTable);
+                //RetrieveAllDataOperation(cloudTable);
+                RetrieveSingleDataOperation(cloudTable, "Consulting", "ervis-trupja-rk-new");
             }
             catch (Exception)
             {
@@ -75,6 +77,29 @@ namespace EmployeeManagement.Data.Operations
             if (updateResult.RequestCharge.HasValue)
             {
                 Console.WriteLine($"updateResponse ==> {updateResponse.PartitionKey} - {updateResponse.RowKey} - {updateResponse.FullName}");
+            }
+        }
+
+        public void RetrieveAllDataOperation(CloudTable cloudTable)
+        {
+            var allDataQuery = cloudTable.ExecuteQuery(new TableQuery<EmployeeEntity>());
+            foreach (var employee in allDataQuery)
+            {
+                Console.WriteLine($"RowKey: {employee.RowKey}, PartionKey: {employee.PartitionKey}, Full Name: {employee.FullName}");
+            }
+        }
+
+        public void RetrieveSingleDataOperation(CloudTable cloudTable, string partitionKey, string rowKey)
+        {
+            TableOperation retrieveSingleOperation = TableOperation.Retrieve<EmployeeEntity>(partitionKey, rowKey);
+
+            TableResult result = cloudTable.Execute(retrieveSingleOperation);
+
+            EmployeeEntity employee = result.Result as EmployeeEntity;
+
+            if(employee != null)
+            {
+                Console.WriteLine($"Employee Data => {employee.RowKey},  {employee.PartitionKey},  {employee.FullName} ");
             }
         }
     }
