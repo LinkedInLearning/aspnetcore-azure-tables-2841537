@@ -10,7 +10,7 @@ namespace EmployeeManagement.Data.Common
     {
         public static async Task<CloudTable> CreateTableAsync(string tableName)
         {
-            string connectionString = ""; // Enter your Azure account's unique connection string.
+            string connectionString = ""; // Paste your Azure account's unique connection string.
 
             CloudStorageAccount cloudStorageAccount;
 
