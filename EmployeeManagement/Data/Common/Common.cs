@@ -10,8 +10,8 @@ namespace EmployeeManagement.Data.Common
     {
         public static async Task<CloudTable> CreateTableAsync(string tableName)
         {
-            string connectionString = "DefaultEndpointsProtocol=https;AccountName=employees-management;AccountKey=GzAgzUgkI74nj7waNHxjaZAqcmJHqYnhnBJGTCAgXg7bKfyIZlpVDGwgDM5oIFxBRb0mv5AKmtoB8I853YIiXg==;TableEndpoint=https://employees-management.table.cosmos.azure.com:443/;";
-
+            string connectionString = ""; // Paste your Azure account's unique connection string.
+            
             CloudStorageAccount cloudStorageAccount;
 
             if(CloudStorageAccount.TryParse(connectionString, out cloudStorageAccount))
