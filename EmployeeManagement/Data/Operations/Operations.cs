@@ -79,7 +79,7 @@ namespace EmployeeManagement.Data.Operations
         }
     }
 }
-            public void RetriveAllDataOperation(CloudTable cloudTable)
+            public void RetrieveAllDataOperation(CloudTable cloudTable)
             {
                 var allDataQuery = cloudTable.ExecuteQuery(new TableQuery<EmployeeEntity>());
                 foreach (var employee in allDataQuery)
@@ -87,5 +87,4 @@ namespace EmployeeManagement.Data.Operations
                 Console.WriteLine($"RowKey: {employee.RowKey}, PartitionKey: {employee.PartitionKey}, Full Name: {employee.FullName}");
             }
         }
-    }
-}
+    
