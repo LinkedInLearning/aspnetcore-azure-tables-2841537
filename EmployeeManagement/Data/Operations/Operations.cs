@@ -18,7 +18,8 @@ namespace EmployeeManagement.Data.Operations
             try
             {
                 //await AddDataOperation(cloudTable);
-                await UpdateDataOperation(cloudTable);
+                //await UpdateDataOperation(cloudTable);
+                RetriveAllDataOperation(cloudTable);
             }
             catch (Exception)
             {
@@ -65,7 +66,6 @@ namespace EmployeeManagement.Data.Operations
             {
                 Console.WriteLine($"addResponse ==> {addResponse.PartitionKey} - {addResponse.RowKey} - {addResponse.FullName}");
             }
-
             newEmployeeEntity.FullName = "Updated Full Name";
 
             TableOperation updateOperation = TableOperation.InsertOrMerge(newEmployeeEntity);
@@ -75,6 +75,16 @@ namespace EmployeeManagement.Data.Operations
             if (updateResult.RequestCharge.HasValue)
             {
                 Console.WriteLine($"updateResponse ==> {updateResponse.PartitionKey} - {updateResponse.RowKey} - {updateResponse.FullName}");
+            }
+        }
+    }
+}
+            public void RetriveAllDataOperation(CloudTable cloudTable)
+            {
+                var allDataQuery = cloudTable.ExecuteQuery(new TableQuery<EmployeeEntity>());
+                foreach (var employee in allDataQuery)
+            {
+                Console.WriteLine($"RowKey: {employee.RowKey}, PartitionKey: {employee.PartitionKey}, Full Name: {employee.FullName}");
             }
         }
     }
